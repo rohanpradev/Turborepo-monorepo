@@ -1,0 +1,43 @@
+# Traefik static configuration
+# This file can be used as an alternative to command-line arguments
+
+[entryPoints]
+  [entryPoints.web]
+    address = ":80"
+    [entryPoints.web.http]
+      [entryPoints.web.http.redirections]
+        [entryPoints.web.http.redirections.entryPoint]
+          to = "websecure"
+          scheme = "https"
+          permanent = true
+
+  [entryPoints.websecure]
+    address = ":443"
+    [entryPoints.websecure.http]
+      tls = true
+
+[api]
+  dashboard = true
+  insecure = false
+
+[providers]
+  [providers.docker]
+    endpoint = "unix:///var/run/docker.sock"
+    exposedByDefault = false
+    network = "ecommerce-network"
+  
+  [providers.file]
+    filename = "/dynamic/tls.yml"
+    watch = true
+
+[log]
+  level = "INFO"
+
+[accessLog]
+  filePath = "/logs/access.log"
+  format = "json"
+
+[metrics]
+  [metrics.prometheus]
+    addEntryPointsLabels = true
+    addServicesLabels = true
