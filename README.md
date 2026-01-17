@@ -1,6 +1,18 @@
 # E-Commerce Microservices Platform
 
-A modern, scalable e-commerce platform built with microservices architecture using Turborepo, Bun, and Next.js with event-driven communication via Apache Kafka.
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff)](#)
+[![Bun](https://img.shields.io/badge/Bun-000?logo=bun&logoColor=fff)](#)
+[![ChatGPT](https://custom-icon-badges.demolab.com/badge/ChatGPT-74aa9c?logo=openai&logoColor=white)](#)
+[![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)](#)
+[![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?logo=vercel&logoColor=white)](#)
+[![Hono](https://img.shields.io/badge/Hono-E36002?logo=hono&logoColor=fff)](#)
+[![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)](#)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff)](#)
+[![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?logo=mongodb&logoColor=white)](#)
+[![Postgres](https://img.shields.io/badge/Postgres-%23316192.svg?logo=postgresql&logoColor=white)](#)
+
+A modern, scalable e-commerce platform built with a microservices architecture using Turborepo, Bun, and Next.js, with event-driven communication via Apache Kafka.
+
 
 ## Architecture Overview
 
